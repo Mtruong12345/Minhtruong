@@ -1,0 +1,403 @@
+<!DOCTYPE >
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="mizu.its.moe | mizu.is-a.dev" />
+		<meta property="og:title" content="Profile RyOâ" />
+		<meta property="og:description" content="MATRIX Community" />
+		<meta property="og:image" content="https://cdn.discordapp.com/attachments/1157617984752328788/1186267633566367824/download.gif" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Owner Source: @RyO" />
+		<meta property="twitter:title" content="Profile RyOâ" />
+		<meta
+			property="twitter:description"
+			content="mizu.its.moe | mizu.is-a.dev" />
+		<meta property="twitter:image" content="https://cdn.discordapp.com/attachments/1157617984752328788/1186267633566367824/download.gif" />
+		<meta property="twitter:image:alt" content="RyOProfile | SLK Community" />
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta
+			name="keywords"
+			content="miyagawamizu,mizu, mizumiyagawa, miyagawa, miyagawa mizu" />
+		<meta name="language" content="Vietnamese" />
+		<meta name="author" content="MiyagawaMizu" />
+		<meta name="view-transition" content="same-origin" />
+		<link rel="icon" href="./public/mahiro_flex.ico" />
+		<link rel="stylesheet" href="./styles/style.css" />
+		<link
+			href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+			rel="stylesheet"
+			crossorigin />
+		<title>RyO</title>
+		<script>
+			// Disable right-click context menu
+			document.addEventListener('contextmenu', function (e) {
+			  e.preventDefault();
+			});
+		
+			// Disable access to developer tools
+			document.onkeydown = function (e) {
+			  if (
+				(e.ctrlKey && e.shiftKey && e.keyCode === 73) || // Ctrl+Shift+I
+				(e.ctrlKey && e.shiftKey && e.keyCode === 67) || // Ctrl+Shift+C
+				(e.ctrlKey && e.shiftKey && e.keyCode === 74) || // Ctrl+Shift+J
+				(e.ctrlKey && e.keyCode === 85)                  // Ctrl+U
+			  ) {
+				return false;
+			  }
+			};
+
+		  </script>
+		</head>
+		<body>
+	</head>
+	<body oncontextmenu="return false;">
+		<div class="container">
+			<div class="profile-border box-color">
+				<div class="profile box-color">
+					<div class="banner">
+						<img
+							id="banner-image"
+							src="./pngxxx/banner.png"
+							alt="" />
+					</div>
+					<div class="main-header">
+						<div class="image">
+							<div class="avatar">
+								<img
+									class="box-color"
+									id="avatar-image"
+									alt=""
+									aria-hidden="true"
+									src="./pngxxx/avatar.jpg" />
+								<img id="avatar-decoration" src="https://cdn.discordapp.com/avatar-decoration-presets/a_d1ea7b8650bf3d64a03304c2ceb7d089.png?size=80&passthrough=true" alt="" />
+								<div class="status box-color">
+									<img
+										id="status-image"
+										src="./public/status/dnd.svg"
+										alt="" />
+								</div>
+							</div>
+							<!-- </button> -->
+						</div>
+						<div class="badges box-color" id="badges">
+							<div class="badges-right">
+								<a class="tooltip" aria-label="HypeSquad Quáº£ Cáº£m">
+									<img alt=" " src="./public/badges/hypesquad-bravery.svg"
+								/></a>
+								<a
+									class="tooltip"
+									id="Active Developer"
+									aria-label="NhÃ  phÃ¡t triá»n tÃ­ch cá»±c">
+									<img alt=" " src="./public/badges/active-developer.svg"
+								/></a>
+								<a class="tooltip" aria-label=" LÃ  ngÆ°á»i ÄÄng kÃ­Â tá»«Â 29Â thg 9, 2023">
+									<img alt=" " src="./public/badges/nitro.svg"
+								/></a>
+								<a
+									class="tooltip"
+									aria-label="ÄÆ°á»£c Biáº¿t Tá»i Vá»i CÃ¡i TÃªn RyO#0001">
+									<img alt=" " src="./public/badges/legacy-username.svg"
+									/></a>
+								<a
+									class="tooltip"
+									aria-label="ÄÃ£ Boost !">
+									<img alt=" " src="./public/badges/boost-24-month.svg"
+								/></a>
+								<a
+									class="tooltip"
+									aria-label="Owenr Sever Ka4RX Community">
+									<img alt=" " src="./public/badges/server-owner.svg"
+									/></a>
+							</div>
+							<div class="badges-left"></div>
+							<!-- badges list-->
+							<!-- -->
+						</div>
+					</div>
+					<div class="card box-color">
+						<div class="name-box">
+							<span class="display-name">RyO</span>
+							<span class="username">pather.local</span>
+							<span class="pronouns">Click báº¥t cá»© ÄÃ¢u Äá» phÃ¡t nháº¡c!!!</span>
+							<div class="custom-status">
+								<img id="custom-status-emoji" />
+								<p class="custom-status-text"></p>
+							</div>
+						</div>
+						<div class="body">
+							<div class="content">
+								<div class="about-section">
+									<div class="title-body">GIá»I THIá»U Vá» TÃI</div>
+									<!-- text -->
+									<span class="Giá»i thiá»u vá» tÃ´i"
+										>Hello I am RyO, I am from 
+										<div class="flag">
+											<img
+												src="./public/icons/flag-for-flag-vietnam-svgrepo-com.svg" />
+										</div>
+
+										<span class="space"></span>
+									</p>About me
+										<a href="https://ryo.pather.uk/" target="_blank"> !R Y O | "Profile" </a>
+										<span class="space"></span></p>
+									</p>TÃ¬m tÃ´i á» ÄÃ¢y
+										<a href="https://discord.gg/ryooo" target="_blank"
+											>!R Y O | SERVER</a
+										></p>
+									</p>! R Y O | "BOT"
+										<a href="https://discord.com/oauth2/authorize?client_id=1183657654103588896&permissions=8&integration_type=0&scope=bot" target="_blank"
+											>! R Y O Music | "BOT" ð¤ </a
+										></p>
+										</p>! R Y O | "BOT"
+										<a href="https://discord.com/oauth2/authorize?client_id=1304292908291067954" target="_blank"
+											>! R Y O Ná»i tá»« | "BOT" ð¤ </a
+										></p>
+										
+										<span class="space">Gun.lol </span>
+									    <a href="https://guns.lol/pather.local" target="_blank"> My 2nd Profile </a>
+                                        <div class="flag">
+											<img
+												src="./public/icons/gun.svg" />
+										</div>
+										<a
+											href=""
+											target="_blank"
+											></a
+										></span
+									>
+									<!-- -->
+								</div>
+								<div class="title-body">ROLES</div>
+								<div class="roles-body">
+									<!-- roles list -->
+									<div class="rol rosepink">
+										<i class="fas fa-circle"></i>
+										<span>Dev Ctrl C + V</span>
+									</div>
+									<div class="rol softpink">
+										<i class="fas fa-circle"></i>
+										<span>SÆ°u táº§m linh tinh</span>
+									</div>
+									<div class="rol green">
+										<i class="fas fa-circle"></i>
+										<span>Design website</span>
+									</div>
+									<div class="rol pink">
+										<i class="fas fa-circle"></i>
+										<span>Impostor</span>
+									</div>
+									<div class="rol blue">
+										<i class="fas fa-circle"></i>
+										<span>Cheater</span>
+									</div>
+									<!-- -->
+								</div>
+								<div class="divider social-divider"></div>
+								<div class="title-body">Máº NG XÃ Há»I</div>
+
+								<div class="socials">
+									<!-- social list -->
+									<div class="column">
+										<a
+											class="platform"
+											href="https://steamcommunity.com/id/ryoneeeee/"
+											rel="noreferrer noopener"
+											target="_blank">
+											<img
+												class="platform-icon"
+												alt=" "
+												aria-hidden="true"
+												src="./public/platforms/steam.svg" />
+											<div class="text-base platform-username">
+												! R Y O
+											</div>
+											<div>
+												<img
+													alt=" "
+													id="link"
+													aria-hidden="true"
+													src="./public/icons/link.svg"
+													class="connect" />
+											</div>
+										</a>
+										<a
+											class="platform"
+											href="https://fb.com/ryoneeeee"
+											rel="noreferrer noopener"
+											target="_blank">
+											<img
+												class="platform-icon"
+												alt=" "
+												aria-hidden="true"
+												src="./public/platforms/facebook.svg" />
+											<div class="text-base platform-username">Duy Khanh</div>
+											<div
+												href="https://fb.com/ryoneeeee"
+												rel="noreferrer noopener"
+												target="_blank">
+												<img
+													alt=" "
+													id="link"
+													aria-hidden="true"
+													src="./public/icons/link.svg"
+													class="connect" />
+											</div>
+										</a>
+									</div>
+									<div class="column">
+										<a
+											class="platform"
+											href="https://discord.com/oauth2/authorize?client_id=1183657654103588896&permissions=8&integration_type=0&scope=bot"
+											rel="noreferrer noopener"
+											target="_blank">
+											<img
+												class="platform-icon"
+												alt=" "
+												aria-hidden="true"
+												src="./public/platforms/discord.svg" />
+											<div class="text-base platform-username">
+												RyO BOT
+											</div>
+											<div>
+												<img
+													alt=" "
+													id="link"
+													aria-hidden="true"
+													src="./public/icons/link.svg"
+													class="connect" />
+											</div>
+										</a>
+										<a
+											class="platform"
+											href="https://discord.gg/BZydRkk5cs"
+											rel="noreferrer noopener"
+											target="_blank">
+											<img
+												class="platform-icon"
+												alt=" "
+												aria-hidden="true"
+												src="./public/platforms/discord.svg" />
+											<div class="text-base platform-username">
+												! R Y O Sever
+											</div>
+											<div class="">
+												<img
+													alt=" "
+													id="link"
+													aria-hidden="true"
+													src="./public/icons/link.svg"
+													class="connect" />
+											</div>
+										</a>
+									</div>
+									<!-- -->
+								</div>
+								<div class="chat-container">
+									<input
+										type="text"
+										id="message-input"
+										placeholder="Message @Mizu" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./scripts/script.js"></script>
+		<script src="./scripts/script_static.js"></script>
+		<script src="./scripts/no_dev.js"></script>
+		<script src="./scripts/message.js"></script>
+
+			TrÃ¬nh duyá»t cá»§a báº¡n khÃ´ng há» trá»£ Ã¢m thanh.
+		</audio>
+		<style>
+			html, body {
+			  cursor: url('hehe.png'), auto;
+			  /* Replace 'your-custom-cursor.png' with the path to your custom cursor image */
+			  height: 100%;
+			  margin: 0;
+			}
+		
+			/* Optional: Add some styles to make the cursor image more noticeable */
+			h1 {
+			  font-family: 'Arial', sans-serif;
+			  text-align: center;
+			  margin-top: 100px;
+			}
+		  </style>
+		</head>
+		<body>
+		</body>
+		</html>
+		<style>
+			body {
+			  margin: 0;
+			  overflow: hidden;
+			}
+		
+			.click-effect {
+			  position: absolute;
+			  background-color: #000000; /* MÃ u cá»§a hiá»u á»©ng, thay Äá»i theo nhu cáº§u */
+			  width: 30px;
+			  height: 30px;
+			  border-radius: 50%;
+			  animation: ripple 0.6s linear;
+			  transform: scale(0);
+			}
+		
+			@keyframes ripple {
+			  to {
+				transform: scale(4);
+				opacity: 0;
+			  }
+			}
+		  </style>
+		</head>
+		<body>
+		
+		<script>
+		  document.addEventListener('DOMContentLoaded', function () {
+			document.body.addEventListener('click', createRippleEffect);
+		  });
+		
+		  function createRippleEffect(event) {
+			const ripple = document.createElement('div');
+			ripple.className = 'click-effect';
+		
+			const x = event.clientX;
+			const y = event.clientY;
+		
+			ripple.style.left = `${x}px`;
+			ripple.style.top = `${y}px`;
+		
+			document.body.appendChild(ripple);
+		
+			// XÃ³a pháº§n tá»­ hiá»u á»©ng sau khi káº¿t thÃºc animation
+			ripple.addEventListener('animationend', () => {
+			  ripple.remove();
+			});
+		  }
+		</script>
+			<address>update</address>
+	</body>
+</html>
+</body>
+</html>
+<body onclick="audio.play()">	
+<script>
+	var audio = new Audio('audio.mp3');
+
+	audio.oncanplaythrough = function(){
+	audio.play();
+	}
+	
+	audio.loop = true;
+	
+	audio.onended = function(){
+	audio.play();
+	}
+
+</script>
+<script>
