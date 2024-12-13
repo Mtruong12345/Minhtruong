@@ -20,7 +20,7 @@ document.addEventListener('copy', event => {
     event.preventDefault();
 
     let copyTxt = window.getSelection().toString();
-    const copyright = 'Source: Đinh Duy Vinh';
+    const copyright = 'Source: Lê Minh Trường';
     event.clipboardData.setData('text/plain', copyTxt + '\n\n' + copyright);
 });
 
@@ -29,8 +29,8 @@ function updateTimer() {
     var timeRemaining = Math.max(0, Math.ceil((nextFetchTime - currentTime) / 1000));
 
     if (timeRemaining > 0) {
-        var minutes = Math.floor(timeRemaining / 60);
-        var seconds = timeRemaining % 60;
+        var minutes = Math.floor(timeRemaining / 30);
+        var seconds = timeRemaining % 30;
         var timeRemainingText = `Đợi ${minutes} phút ${seconds} giây để lấy ID khác`;
         document.getElementById("getUidButton").textContent = timeRemainingText;
         document.getElementById("getUidButton").classList.add("btn-disabled");
@@ -68,7 +68,7 @@ function getUid() {
             return;
         }
 
-        var regex = /(?:https?:\/\/|http:\/\/)?(?:www\.)?facebook\.com\/(?:profile\.php\?id=)?(\d+)&mibextid=/;
+        var regex = /(?:https?:\/\/|http:\/\/)?(?:graph\.)?facebook\.com\/{username};
         var match = facebookLink.match(regex);
 
         if (match) {
@@ -92,8 +92,8 @@ function getUid() {
             facebookLink = facebookLink.replace("facebook.com/", "https://www.facebook.com/");
         }
 
-        if (facebookLink.startsWith("https://www.facebook.com/profile.php?id=")) {
-            facebookLink = facebookLink.replace("https://www.facebook.com/profile.php?id=", "https://www.facebook.com/");
+        if (facebookLink.startsWith("https://graph.facebook.com/{username}")) {
+            facebookLink = facebookLink.replace("https://graph.facebook.com/{username}", "https://www.facebook.com/");
         }
 
         if (facebookLink.startsWith("https://m.facebook.com/")) {
