@@ -1,0 +1,178 @@
+<!--
+//////////////////////////////////////////////////////////////////////
+//Thế gian không nợ ta điều gì, nhân quả báo ứng không chừa một ai!///
+//                    ĐỪNG COPY CODE EM =)))                      ////
+//                          _ooOoo_                               ////
+//                         o8888888o                              ////
+//                         88" . "88                              ////
+//                         (| ^_^ |)                              ////
+//                         O\  =  /O                              ////
+//                      ____/`---'\____                           ////
+//                    .'  \\|     |//  `.                         ////
+//                   /  \\|||  :  |||//  \                        ////
+//                  /  _||||| -:- |||||-  \                       ////
+//                  |   | \\\  -  /// |   |                       ////
+//                  | \_|  ''\---/''  |   |                       ////
+//                  \  .-\__  `-`  ___/-. /                       ////
+//                ___`. .'  /--.--\  `. . ___                     ////
+//              ."" '<  `.___\_<|>_/___.'  >'"".                  ////
+//            | | :  `- \`.;`\ _ /`;.`/ - ` : | |                 ////
+//            \  \ `-.   \_ __\ /__ _/   .-` /  /                 ////
+//      ========`-.____`-.___\_____/___.-`____.-'========         ////
+//                           `=---='                              ////
+//      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        ////
+//          Quay đầu là bờ , mau tắt dev tools                    ////
+//                      t.me/duyvinh09                            ////
+/////////////////////////////////////////////////////////////////////-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <noscript><meta http-equiv="refresh" content="0; url=https://bit.ly/3MDyab1" /></noscript>
+    <meta name="description" content="Công cụ lấy ID facebook nhanh chóng">
+    <meta name="keywords" content="website, get id, lấy id facebook, công cụ">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Công cụ lấy ID facebook nhanh chóng" />
+    <meta property="og:image" content="https://i.imgur.com/F0JoZF6.jpg" />
+    <title>Facebook ID Tool</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="shortcut icon" href="https://i.imgur.com/83Gs09S.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.3/dist/tailwind.min.css" rel="stylesheet">
+    <script disable-devtool-auto md5='2d27c193eef1566b73904e5f948fc708' src='https://cdn.jsdelivr.net/npm/disable-devtool@latest'></script>
+    <script disable-devtool-auto md5='2d27c193eef1566b73904e5f948fc708' src='./npm/disable-devtool.min.js'></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900">
+    <main class="p-6 min-h-screen flex items-center justify-center">
+        <div class="max-w-md w-full space-y-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold text-blue-500 dark:text-blue-300">
+                    <i class="fab fa-facebook"></i> Get Facebook UID
+                </h1>
+                <p class="text-gray-600 dark:text-gray-400">
+                    Nhập link hồ sơ Facebook của bạn để lấy UID
+                </p>
+            </div>
+            <div class="rounded-lg border bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 shadow-md px-8 py-6 space-y-4">
+                <form id="check_form" method="POST">
+                    <div class="mb-4">
+                        <label for="facebookLink" class="text-sm leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 font-medium text-gray-700">
+                            Đường dẫn Facebook
+                        </label>
+                        <div class="mt-1 relative rounded-md shadow-sm">
+                            <input id="facebookLink" class="w-full h-10 rounded-md border px-3 py-2 pr-10 text-sm focus:outline-none focus:ring focus:border-blue-500" type="url" name="link" placeholder="Nhập Link facebook cần lấy ID" required autofocus>
+                            <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="h-5 w-5 text-gray-400">
+                                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" id="getUidButton" class="btn btn-primary mt-2 w-100" onclick="getUid()">Lấy ID</button>
+                    <div style="margin-top: 0.5rem; ">
+                        <div class="border-t border-gray-200 pt-4">
+                            <label for="coppy" class="block text-sm font-medium text-gray-700 mb-2">
+                                Kết quả ID
+                            </label>
+                            <div class="flex space-x-2">
+                                <input id="coppy" class="flex-1 block w-full pl-4 pr-10 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" readonly="" type="text"></input>
+                                <button type="button" class="btn btn-primary me-2" id="copy-btn" onclick="copyUid()"><i class="fas fa-copy"></i></button>
+                                <button type="button" class="btn btn-secondary" id="check-btn" onclick="checkProfile()"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                        <div id="userDetails" class="mt-4"></div>
+                    </div>
+                    
+                </form>
+            </div>
+            <footer class="mt-6 text-center text-gray-500 text-sm">
+                &copy; 2024 <a href="https://zalo.me/duyvinh09"><font color="blue">Dinh Duy Vinh</font></a>. All rights reserved.
+            </footer>
+            <!-- Popup container -->
+            <div class="popup-container">
+                <div id="popupSuccess" class="popup popup-success">
+                    Thông báo: Lấy ID Facebook Thành Công!
+                </div>
+
+                <div id="popupError" class="popup popup-error">
+                    Lỗi: Link Facebook Sai hoặc Không Tồn Tại.
+                </div>
+
+                <div id="popupCopySuccess" class="popup popup-success">
+                    Thông báo: Sao Chép Thành Công!
+                </div>
+            </div>
+        </div>
+    </main>
+<script src="vinhscript.js"></script>
+<script type='text/javascript'>
+    var _widget_settings = {
+    positions: 'bottom right',
+    support: {
+        staff: {
+        name: 'Admin',
+        image: 'https://graph.facebook.com/100015359342786/picture?width=100&height=100&access_token=6628568379|c1e620fa708a1d5696fb991c1bde5662',
+        messages: 'Không biết Tôi có thể hỗ trợ gì cho bạn không ạ?'
+        }
+    },
+    buttons: {
+        contact: {
+        visible: 'false',
+        id: 'https://t.me/in4FB',
+        messages: 'Box Telegram'
+        },
+        email: {
+        visible: 'false',
+        id: 'example@gmail.com',
+        messages: 'Gửi email'
+        },
+        call: {
+        visible: 'false',
+        id: '0914428517',
+        messages: 'Gọi điện'
+        },
+        sms: {
+        visible: 'false',
+        id: '0914428517',
+        messages: 'Nhắn tin'
+        },
+        viber: {
+        visible: 'false',
+        id: 'code.x10.mx',
+        messages: 'Chat'
+        },
+        telegram: {
+        visible: 'false',
+        id: '@in4FB_bot',
+        messages: 'Chat Telegram'
+        },
+        zalo: {
+        visible: 'true',
+        id: 'duyvinh09',
+        messages: 'Chat Zalo'
+        },
+        facebook: {
+        visible: 'true',
+        id: 'duyvinh09',
+        messages: 'Chat Facebook'
+        }
+    }
+    }
+</script>
+<div class="gtranslate_wrapper"></div>
+<script>
+    window.gtranslateSettings = {"default_language":"vi","native_language_names":true,"wrapper_selector":".gtranslate_wrapper","alt_flags":{"en":"usa","pt":"brazil","es":"argentina","fr":"quebec"}}
+</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://dl.dropboxusercontent.com/s/0g338x7mvg1x64z/contact-button-widget.js'></script>
+</body>
+</html>

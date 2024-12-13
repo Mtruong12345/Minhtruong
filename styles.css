@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/* Popup styles */
+.popup-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: max-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.popup {
+    padding: 15px;
+    border-radius: 8px;
+    display: none;
+    animation: fadeInOut 5s ease-in-out;
+}
+
+.popup-success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.popup-error {
+    background-color: #FF6347;
+    color: white;
+}
+
+@keyframes fadeInOut {
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    10%,
+    90% {
+        opacity: 1;
+    }
+}
+
+.reset-button {
+    cursor: pointer;
+}
+
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.btn {
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.btn-primary {
+    width: 110px;
+    height: 40px;
+    background-color: #3B82F6;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-secondary {
+    width: 110px;
+    height: 40px;
+    background-color: #6C757D;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    filter: brightness(90%);
+    transform: scale(1.01);
+}
+
+#copy-btn {
+    width: 45px;
+}
+
+#check-btn {
+    background-color: #c1cee0;
+    width: 45px;
+}
+
+#getUidButton {
+    width: 100%;
+}
