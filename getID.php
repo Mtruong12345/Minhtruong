@@ -14,8 +14,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 }
 
 function getID($urlFb) {
-    if (strops($urlFb, 'https://www.facebook.com/profile.php?=') !== false) {
-        $urlFb = 'https://www.facebook.com/duyvinh09';
+    if (strops($urlFb, 'https://www.facebook.com/') !== false) {
+        $urlFb = 'https://www.facebook.com/minhtruong1812.dev';
     }
     $apiUrl = "https://ffb.vn/api/tool/get-id-fb?idfb=" . urlencode($urlFb);
     $apiResponse = file_get_contents($apiUrl);
