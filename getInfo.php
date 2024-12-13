@@ -4,23 +4,22 @@ function cleanInput($data) {
 }
 
 $userId = isset($_GET['id']) ? cleanInput($_GET['id']) : null;
-// $key = isset($_GET['key']) ? cleanInput($_GET['key']) : null;
+$key = isset($_GET['key']) ? cleanInput($_GET['key']) : null;
+$allowedDomains = array($_SERVER['SERVER_NAME']);
+$referer = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : null;
+$isValidDomain = false;
 
-// $allowedDomains = array($_SERVER['SERVER_NAME']);
-// $referer = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : null;
-// $isValidDomain = false;
+foreach ($allowedDomains as $domain) {
+     if ($referer && strpos($referer, $domain) !== false) {
+         $isValidDomain = true;
+         break;
+     }
+ }
 
-// foreach ($allowedDomains as $domain) {
-//     if ($referer && strpos($referer, $domain) !== false) {
-//         $isValidDomain = true;
-//         break;
-//     }
-// }
+ $apiKeyFile = 'apiKey.txt';
+ $apiKeyList = file($apiKeyFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
-// $apiKeyFile = 'apiKey.txt';
-// $apiKeyList = file($apiKeyFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-
-$accessTokenFile = 'dvinhToken.txt';
+$accessTokenFile = 'MtruongToken.txt';
 $accessTokenList = [];
 
 $fileHandle = fopen($accessTokenFile, "r");
@@ -42,9 +41,9 @@ if (empty($userId)) {  // && empty($key)
             "type" => "?id={id}&key={key}"
         ),
         "Admin" => array(
-            "Author" => "Đinh Duy Vinh",
-            "Facebook" => "https://www.facebook.com/duyvinh09",
-            "Zalo" => "https://zalo.me/duyvinh09"
+            "Author" => "Lê Minh Trường",
+            "Facebook" => "https://www.facebook.com/minhtruong1812.dev",
+            "Messenger" => "https://m.me/minhtruong1812.dev"
         )
     );
 
@@ -117,9 +116,9 @@ $responseArray = array(
     "status" => ($success ? "success" : "error"),
     "result" => ($success ? $decodedResponse : "ID không tồn tại hoặc đã bị gỡ trên Facebook"),
     "Admin" => array(
-        "Author" => "Đinh Duy Vinh",
-        "Facebook" => "https://www.facebook.com/duyvinh09",
-        "Zalo" => "https://zalo.me/duyvinh09"
+        "Author" => "Lê Minh Trường",
+        "Facebook" => "https://www.facebook.com/minhtruong1812.dev",
+        "Messenger" => "https://m.me/minhtruong1812.dev"
     )
 );
 
