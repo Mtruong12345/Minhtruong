@@ -1,12 +1,12 @@
 <?php
-// https://ffb.vn/api/tool/get-id-fb?idfb=
+ https://ffb.vn/api/tool/get-id-fb?idfb=
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $linkFB = isset($_GET['linkFB']) ? $_GET['linkFB'] : '';
 
     if (filter_var($linkFB, FILTER_VALIDATE_URL)) {
         $url = $linkFB;
     } else {
-        $url = 'https://www.facebook.com/' . $linkFB;
+        $url = 'https://graph.facebook.com/{username}' . $linkFB;
     }
     $apiResponse = getID($url);
     header('Content-Type: application/json; charset=UTF-8');
@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 }
 
 function getID($urlFb) {
-    if (strops($urlFb, 'https://www.facebook.com/') !== false) {
+    if (strops($urlFb, 'https://graph.facebook.com/{username}') !== false) {
         $urlFb = 'https://www.facebook.com/minhtruong1812.dev';
     }
     $apiUrl = "https://ffb.vn/api/tool/get-id-fb?idfb=" . urlencode($urlFb);
