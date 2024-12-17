@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hi my name is ThanhDieu / A freelance / web developer / vexer">
+    <meta name="keywords" content="minhtruong,web minh truong,le minh truong,minhtruongtv,wsteam,wusteam,minhtruong home,profile minhtruong">
+    <title>LÊ MINH TRƯỜNG | Resources V5</title>
+    <link rel="icon" href="./res/v5/img/logo.jpg">
+</head>
+<body>
+    <!-- Header -->
+    <header style="text-align: center;">
+        <h1>MINHTRUONG | HOME</h1>
+        <img src="./res/v5/img/avatar.gif" alt="Avatar" width="200">
+        <h2>Hello Everybody, My name is MINHTRUONG</h2>
+        <p>I really like website design 🌭</p>
+        <p>👉 Tìm hiểu tôi 😶&zwj;🌫️</p>
+        <p>🤖️ Người đam mê công nghệ số</p>
+        <p>🔍 Chia sẻ và giúp đỡ nhiệt tình</p>
+        <p>💻 Kỹ sư phát triển front-end</p>
+        <p>🥳 Thích làm thần tượng TikTok</p>
+        <p>🎮 Ăn, ngủ, làm và chơi game</p>
+        <p>✨ Kẻ khờ dại tin vào tình yêu</p>
+    </header>
+
+    <!-- Phần Love Days -->
+    <section style="text-align: center; margin: 40px 0;">
+        <h3>💖 Chuyện Tình Của Chúng Tôi 💖</h3>
+        <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+            <div>
+                <img src="./res/v5/img/male.jpeg" alt="MinhTruong" width="150" style="border-radius: 50%;">
+                <p style="font-weight: bold;">MinhTruong</p>
+            </div>
+            <div>
+                <h4 style="color: crimson;">💖 Bắt đầu từ ngày 💖</h4>
+                <p style="font-size: 20px; font-weight: bold;">28/03/2024</p>
+            </div>
+            <div>
+                <img src="./res/v5/img/female.jpeg" alt="Kim Ngan" width="150" style="border-radius: 50%;">
+                <p style="font-weight: bold;">Kim Ngan</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phần nhạc Giáng Sinh -->
+    <section style="margin: 40px;">
+        <h3 style="text-align: center;">🎵 Danh Sách Nhạc 🎵</h3>
+        <div id="musicList" style="text-align: center;">
+            <!-- Danh sách nhạc sẽ được hiển thị ở đây -->
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <button onclick="addSong()" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">🎶 Thêm Bài Hát Mới 🎶</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="text-align: center; margin-top: 40px;">
+        <p>© 2024 MinhTruong | Designed by MinhTruong</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Danh sách nhạc ban đầu
+        const songs = [
+            { title: "Last Christmas", url: "https://files.catbox.moe/bbdt54.mp3" },
+            { title: "Jingle Bells", url: "https://files.catbox.moe/ks700d.mp3" },
+            { title: "Lemon Tree", url: "https://files.catbox.moe/rg9mym.mp3" },
+            { title: "Feliz Navidad", url: "https://files.catbox.moe/9reiim.mp3" },
+            { title: "We Wish You a Merry Christmas", url: "https://files.catbox.moe/x2d0bn.mp3" }
+        ];
+
+        // Hàm render danh sách nhạc
+        function renderMusicList() {
+            const musicList = document.getElementById('musicList');
+            musicList.innerHTML = ''; // Xóa danh sách cũ
+            songs.forEach(song => {
+                const songDiv = document.createElement('div');
+                songDiv.style.marginBottom = '20px';
+                songDiv.innerHTML = `
+                    <h4>${song.title}</h4>
+                    <audio controls>
+                        <source src="${song.url}" type="audio/mp3">
+                    </audio>
+                `;
+                musicList.appendChild(songDiv);
+            });
+        }
+
+        // Hàm thêm bài hát mới
+        function addSong() {
+            const title = prompt("Nhập tên bài hát:");
+            const url = prompt("Nhập URL bài hát:");
+            if (title && url) {
+                songs.push({ title, url });
+                renderMusicList();
+            } else {
+                alert("Vui lòng nhập đầy đủ thông tin.");
+            }
+        }
+
+        // Hiển thị danh sách nhạc ban đầu
+        renderMusicList();
+    </script>
+</body>
+</html>
