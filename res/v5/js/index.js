@@ -18,8 +18,7 @@ let WsLoaded = false;
 const messages = [
     { message: 'Đang tải tài nguyên...', delay: 0 },
     { message: 'Đang tải các plugins...', delay: 50 },
-    { message: 'Chờ xíu sắp tải xong....', delay: 120 },
-    { message: 'Có thể mất nhiều thời gian', delay: 200 }
+    { message: 'Chờ xíu sắp tải xong....', delay: 100 },
 ];
 messages.forEach(msg => {
     setTimeout(() => {
