@@ -14,7 +14,7 @@ $(function() {
         showClose: true,
         html: true
     })
-let WsLoaded = false; 
+let WsLoaded = true; 
 const messages = [
     { message: 'Đang tải tài nguyên...', delay: 0 },
     { message: 'Đang tải các plugins...', delay: 50 },
